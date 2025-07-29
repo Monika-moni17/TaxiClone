@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e6f0ff;
+      background-image: url(cab.jpg.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #003366;
+      margin: 0;
+      padding: 0;
+      height: 85vh;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin-top: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #007bff;
+    }
+
+    .booking-form {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #003366;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      color: #003366;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+
+    .booking-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .booking-form input,
+    .booking-form select {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.15);
+      color: #003366;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .booking-form input::placeholder,
+    .booking-form select option {
+      color: #003366;
+      font-weight: 500;
+    }
+
+    .booking-form input:focus,
+    .booking-form select:focus {
+      outline: none;
+      border: 2px solid #66ccff;
+      box-shadow: 0 0 10px rgba(102,204,255,0.5);
+      background: rgba(255,255,255,0.25);
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #d4edda;
+      border: 2px solid #0f65bb;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .popup button {
+      margin-top: 10px;
+      background-color: #007bff;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="booking-form">
+    <h2>Passenger Details</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" id="name" autocomplete="off" required>
+      <input type="tel" placeholder="Phone Number" id="phone" autocomplete="off" required>
+      <input type="text" placeholder="Address" id="address" autocomplete="off" required>
+
+      <select id="trip" autocomplete="off" required>
+        <option value="">Trip Type</option>
+        <option value="one">One Way</option>
+        <option value="two">Two Way</option>
+      </select>
+
+      <input type="tel" placeholder="No. of Passengers" id="passengers" autocomplete="off" required>
+      <input type="text" id="pickup" placeholder="Pickup Location" autocomplete="off" required>
+      <input type="text" id="drop" placeholder="Drop Location" autocomplete="off" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p>Booking Confirmed!</p>
+    <button onclick="goToNextPage()">OK</button>
+  </div>
+
+  <script>
+    const form = document.getElementById("bookingForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const address = document.getElementById("address").value.trim();
+      const trip = document.getElementById("trip").value.trim();
+      const passengers = document.getElementById("passengers").value.trim();
+      const pickup = document.getElementById("pickup").value.trim();
+      const drop = document.getElementById("drop").value.trim();
+
+      if (name && phone && address && trip && passengers && pickup && drop) {
+        document.getElementById("popup").style.display = "block";
+      } else {
+        alert("Please fill in all the fields.");
+      }
+    });
+
+    function goToNextPage() {
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>

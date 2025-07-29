@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+      body {
+      background-color: #eaf4ff;
+      color: #003366;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    .container p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .store {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 120px;
+    }
+
+    .store img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .store a {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s; 
+    }
+
+    .store a:hover {
+      background-color:#003366;
+    }
+
+    .qr-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .qr-section img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .right-image {
+      width: 45%;
+    }
+
+    .right-image img {
+    margin-left: 40px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    }
+    
+    .footer {
+  background-color: #b1d4fa;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo h2 {
+  margin-bottom: 5px;
+  color: #003366;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #043569;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ffffff44;
+  padding-top: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+}
+
+.footer-icons {
+  margin-top: 15px;
+}
+
+.social-icon {
+   color: #003366;
+  font-size: 18px;
+  margin-right: 12px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007BFF;
+  transform: scale(1.2);
+}
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Download the Blue Cabs App Now!</h1>
+    <p>Download to book a ride, order food, and get groceries.</p>
+
+    <div class="store-buttons">
+      <div class="store">
+        <img src="gallery.png" alt="AppGallery">
+        <a href="#">Download</a>
+      </div>
+      <div class="store">
+        <img src="apple.png"  alt="App Store">
+        <a href="#">Download</a>
+      </div>
+      <div class="store">
+        <img src="store.png.jpeg" alt="Google Play">
+        <a href="#">Download</a>
+      </div>
+    </div>
+
+    <div class="qr-section">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com" alt="QR 1">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com" alt="QR 2">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.google.com" alt="QR 3">
+    </div>
+    
+    <div class="right-image">
+      <img src="mobileimage.png" alt="Cab Image">
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2 class="logo"><i style="margin-right: 8px;"  class="fas fa-car-side"></i>Blue Cabs</h2>
+      <p>Go Places. Go Blue</p>
+
+      <div class="footer-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Help Centre</a></li>
+        <li><a href="#">Tech Blog</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@bluecabs.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: Madurai, Tamil Nadu</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Blue Cabs. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
