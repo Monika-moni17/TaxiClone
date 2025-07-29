@@ -1,60 +1,172 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Car Booking App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Blue Cabs - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
- <!-- STANDARD SECTION -->
-<div class="section">
-  <h2>Standard</h2>
-  <div class="card-box">
-    <div class="car-card">
-      <img src="standard1.png" alt="Swift Dzire">
-      <h3>Swift Dzire</h3>
-      <p>“Family Moments Begin with the Right Ride!”</p>
-      <p class="desc">Perfect for small families and city drives.<br>Enjoy a smooth and safe journey every time.</p>
-      <a href="booking.html"><button class="book-btn">Book Now</button></a>
+
+   <!-- Navbar -->
+<div class="navbar">
+  <span class="logo"><i class="fas fa-car-side"></i>Blue Cabs</span>
+  <div>
+    <a href="home.html">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#faq">FAQs</a>
+    <a href="login.html">LogIn</a>
+  </div>
+</div> 
+
+  <!-- Main Content -->
+   <img src="blue.jpg" style="height: 580px; width: 84.4rem;">
+
+  <!-- About Us Section -->
+<section id="about" class="about-section">
+  <h2>About Us</h2>
+  <p>
+    Blue Cabs is a trusted online cab booking service that ensures your travel is safe, fast, and affordable.
+    We are available 24/7 and operate in multiple cities with a fleet of well-maintained vehicles.
+    Our professional drivers are trained, background-checked, and customer-friendly.
+    Whether it's a short city trip or an outstation ride, we have you covered.
+    We use advanced GPS technology to track and provide real-time updates.
+    Booking with us is simple — just a tap away through our user-friendly website or app.
+    Our mission is to provide rides that are safe, punctual, and comfortable.
+    Choose Blue Cabs — Because your journey matters!
+  </p>
+</section>
+
+<!-- safety Section -->
+
+  <section class="safety-section">
+    <h2>Our Commitment to Safety</h2>
+    <div class="safety-content">
+      <div class="safety-box">
+        <h3 style="font-size: 26px;">Emergency Button</h3>
+        <p>Any time during a ride, passengers can press the emergency button to notify the authorities or their emergency contacts.</p>
+      </div>
+      <div class="safety-box">
+        <h3 style="font-size:26px ;">Number Masking</h3>
+        <p>We mask the personal contact numbers of both passengers and drivers, to protect the privacy and data of both parties. As a safety-focused company, we've implemented features for a secure customer experience.</p>
+      </div>
+      <div class="safety-box">
+        <h3 style="font-size: 26px;">Share my ride</h3>
+        <p>Passengers can let friends or loved ones know where they are by sharing their live GPS location.</p>
+      </div>
     </div>
-    <div class="car-card">
-      <img src="standard2.png" alt="Hyundai i20">
-      <h3>Hyundai i20</h3>
-      <p>“From Runway to Roadway — Ride in Style!”</p>
-      <p class="desc">Ideal for daily commutes and quick getaways.<br>Style and comfort in one powerful package.</p>
-      <a href="booking.html"><button class="book-btn">Book Now</button></a>
+
+    <a href="#" class="learn-more-btn">Learn More</a>
+  </section>
+
+
+<!--faq section-->
+
+  <div class="faq-container" id="faq">
+    <h2>FAQs</h2>
+    <div class="faq-inner">
+    <div class="faq-item">
+      <div class="question">
+        <span>How can I pay for my ride?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">You can pay with cash, Your credit card,debit card. Just choose Your preferred method when booking Your ride.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <span>How can I contact my driver?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">Tap "Message" in the app and click "chat" to organise your ride with your driver. Your chat history will be deleted upon completion of your ride.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <span>How to book a blue cabs in Madurai?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">To book a blue cabs in Madurai,download the Blue Cabs app,sign in or create an account, enter your pick-up and drop-off locations, confirm your booking, and wait for the assigned driver to pick you up.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <span>Can I cancel my ride after booking?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">Yes, you can cancel before the driver arrives. Go to "My Rides" and select the cancel option. No charges if cancelled within 2 minutes.After that, a cancellation fee may apply.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <span>Is it safe to travel with Blue Cabs at night?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">Yes, safety is our top priority always. All drivers are background-verified and trained.Cabs are GPS-tracked and monitored live.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        <span>What if the driver cancels the ride?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <p class="answer">If the driver cancels, another driver is auto-assigned. you will be notified instantly via app and SMS.</p>
     </div>
   </div>
-</div>
+  </div>
 
-<!-- PREMIUM SECTION -->
-<div class="section">
-  <h2>Premium</h2>
-  <div class="card-box">
-    <div class="car-card">
-      <img src="premium1.png" alt="Honda City">
-      <h3>Honda City</h3>
-      <p>“Late Nights, Smooth Rides — Book with Ease!”</p>
-      <p class="desc">Premium seating with luxury interiors.<br>Perfect for business trips or weekend fun.</p>
-      <a href="booking.html"><button class="book-btn">Book Now</button></a>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const questions = document.querySelectorAll(".faq-item .question");
+
+  questions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const item = question.parentElement;
+      item.classList.toggle("active");
+    });
+  });
+});
+
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2 class="logo"><i class="fas fa-car-side"></i>Blue Cabs</h2>
+      <p>Go Places. Go Blue</p>
+
+      <div class="footer-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
-    <div class="car-card">
-      <img src="premium2.png" alt="Tata Nexon">
-      <h3>Tata Nexon</h3>
-      <p>“Safe. Swift. Stylish — Just a Tap Away.”</p>
-      <p class="desc">SUV comfort with modern design.<br>Drive confidently wherever you go.</p>
-      <a href="booking.html"><button class="book-btn">Book Now</button></a>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Help Centre</a></li>
+        <li><a href="#">Tech Blog</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
     </div>
-    <div class="car-card">
-      <img src="premium3.png" alt="Toyota Innova Crysta">
-      <h3>Toyota Innova Crysta</h3>
-      <p>“One Tap, One Ride — Anywhere You Are.”</p>
-      <p class="desc">Spacious ride for family and luggage.<br>Long distance comfort guaranteed.</p>
-      <a href="booking.html"><button class="book-btn">Book Now</button></a>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@bluecabs.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: Madurai, Tamil Nadu</p>
     </div>
   </div>
-</div>
 
+  <div class="footer-bottom">
+    <p>&copy; 2025 Blue Cabs. All rights reserved.</p>
+  </div>
+  
+</footer>
 </body>
+
 </html>
