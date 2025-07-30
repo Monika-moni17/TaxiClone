@@ -41,16 +41,13 @@
       }
 
       if (email && password) {
-        document.getElementById("successPopup").style.display = "block";
+        window.location.href = "category.html"; 
         clear();
       } else {
         alert("Please enter both Email and Password.");
       }
     }
 
-    function goToNextPage() {
-      window.location.href = "category.html"; // ✅ redirect
-    }
   </script>
 </body>
 </html>
