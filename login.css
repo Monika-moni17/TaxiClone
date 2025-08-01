@@ -139,16 +139,18 @@ body {
 @media (max-width: 768px) {
   body {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     height: auto;
     background-position: top center;
+    align-items: center;
   }
 
   .login-box {
     flex-direction: column;
     width: 100%;
     height: auto;
-    max-width: 90%;
+    max-width: 400px;
+    margin: 20px;
   }
 
   .welcome {
@@ -165,16 +167,25 @@ body {
   }
 
   .login-box1 h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .login-box1 input,
   .login-box1 button {
+    width: 100%;
     font-size: 16px;
-    padding: 10px;
+    padding: 12px;
+    box-sizing: border-box;
   }
 
   .signup-container {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .login-box1 a {
     font-size: 13px;
+    text-align: center;
+    display: block;
   }
 }
