@@ -137,40 +137,59 @@ body {
 
 @media (max-width: 480px) {
   body {
+    margin: 0;
     padding: 10px;
     font-size: 14px;
+    background-size: cover;
   }
 
-  .login-container {
+  .login-box {
     width: 100%;
-    padding: 20px 10px;
-    box-sizing: border-box;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .login-box1 {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
   }
 
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 100%;
     font-size: 16px;
-    margin-bottom: 15px;
     padding: 10px;
+    margin: 10px 0;
     box-sizing: border-box;
   }
 
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
-  .button-container button {
-    width: 100%;
+  .signup-container p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .signup-link {
+    font-weight: bold;
+  }
+
+  #successPopup {
+    width: 90%;
+    padding: 20px;
     font-size: 16px;
-    padding: 10px;
+    box-sizing: border-box;
   }
 }
