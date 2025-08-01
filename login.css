@@ -136,60 +136,37 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
-    margin: 0;
-    padding: 10px;
-    font-size: 14px;
-    background-size: cover;
-  }
 
   .login-box {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .login-box1 {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  h2 {
-    font-size: 22px;
-    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
   }
 
   input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-  }
-
+  input[type="password"],
   button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .login-box1 h2 {
+    font-size: 20px;
   }
 
   .signup-container p {
     font-size: 14px;
     text-align: center;
   }
-
-  .signup-link {
-    font-weight: bold;
-  }
-
-  #successPopup {
+  
+  .popup {
     width: 90%;
     padding: 20px;
-    font-size: 16px;
-    box-sizing: border-box;
   }
-}
+  
+  .signup-container p {
+    font-size: 14px;
+  }
+
+    
+  }
